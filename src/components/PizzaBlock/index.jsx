@@ -15,7 +15,7 @@ function PizzaBlock({
 }) {
   const [activeType, setActiveType] = React.useState(types[0]);
   const [activeSize, setActiveSize] = React.useState(0);
-  const typesNames = ["тонкое", "традиционое"];
+  const typesNames = ["thin", "traditional"];
   const avaibleSizes = [26, 30, 40];
 
   const onSelectType = (index) => {
@@ -51,7 +51,7 @@ function PizzaBlock({
           disabled: !sizes.includes(item),
         })}
       >
-        {item} см.
+        {item} cm.
       </li>
     );
   });
